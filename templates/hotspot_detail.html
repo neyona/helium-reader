@@ -1,0 +1,41 @@
+<!-- {% extends '_base.html' %}
+
+{% block title %}Hotspot Detail Page{% endblock title %}
+
+{% block content %}
+<div class="jumbotron" style="background-color: black; color: #f2edda;">
+  <div>
+    <div class="card">
+      <div class="card-body" style="background-image: linear-gradient(100deg, #512E5F, #6C3483, #AF7AC5); color: white;">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Hotspot: {{ hotspot.hotspot_name }}</h2>
+            <p>
+              Full Url: {{ hotspot.full_url }}
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer" style="background-image: linear-gradient(100deg, Purple, MediumVioletRed); color: white;">
+          <a href="{% url 'hotspot_edit' object.pk %}" class="btn btn-edit btn-lg">Edit</a> |
+          <a href="{% url 'hotspot_delete' object.pk %}" class="btn btn-danger btn-lg">Delete</a> |
+          Or go back to <a href="{% url 'hotspot_list' %}" class="btn btn-one btn-lg">All your hotspots</a>
+      </div>
+    </div>
+    <br />
+
+    <h3>- Rewards related to this hotspot -</h3>
+    <h3><a class="btn btn-sample btn-lg" href="{% url 'reward_new' %}">Input a new reward</a></h3>
+    {% for reward in reward_list %}
+       <div class="card">
+          <div class="card-body" style="background-color: midnightblue; color: white;">
+              <p>{{ reward.timestamp }}</p>
+              <p>{{ reward.sum }}</p>
+          </div>
+     </div>
+  </div>
+  <br />
+  {% endfor %}
+</div>
+</div>
+{% endblock content %} -->

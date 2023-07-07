@@ -1,0 +1,17 @@
+DJANGO_SETTINGS_MODULE=hr_project.settings.development
+ALLOWED_HOSTS=0.0.0.0,localhost,127.0.0.1,[::1],web
+ENVIRONMENT=development
+SECRET_KEY=**********************************************************
+SIGNING_KEY=**********************************************************
+DEBUG=True
+POSTGRES_ENGINE=django.db.backends.postgresql
+POSTGRES_DB=******
+POSTGRES_USER=******
+POSTGRES_PASS=*********
+PG_HOST=****
+PG_PORT=5432
+DATABASE=postgres
+CELERY_BROKER=redis://redis:6379/0
+CELERY_BACKEND=redis://redis:6379/0
+CELERY_FLOWER_USER=*****
+CELERY_FLOWER_PASSWORD=************

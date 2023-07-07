@@ -1,0 +1,39 @@
+<!-- {% extends '_base.html' %}
+
+{% block title %}Hotspot List{% endblock title %}
+
+{% block content %}
+  <div class="card" style="background-color: black; color: #f2edda;">
+  <span>
+    <h1>List of Hotspots:</h1>
+      <p>
+          <a href="{% url 'hotspot_new' %}" class="btn btn-sample btn-lg">
+        Add a New Hotspot
+      </a></p>
+      <p><a href="{% url 'home' %}" class="btn btn-sample btn-lg">
+        Back to the Homepage
+      </a></p>
+  </span>
+
+  <hr />
+
+  {% for hotspot in object_list %}
+    <div class="card">
+      <div class="card-body" style="background-color: #1E656D; color: white;">
+        <span class="font-weight-bold">
+            <h2 class="mb-l">Hotspot name: <a href="{% url 'hotspot_detail' hotspot.pk %}" class="btn btn-delete btn-lg">{{ hotspot.hotspot_name }} {{ hotspot.location_url }}</a></h2>
+        </span>
+        <br />
+        <span>Hotspot Manager: {{ hotspot.hotspot_manager }} | Full Url: {{ hotspot.full_url }}</span>
+        <br />
+        <a href="{% url 'hotspot_edit' hotspot.pk %}" class="btn btn-edit btn-lg">Edit</a> |
+        <a href="{% url 'hotspot_delete' hotspot.pk %}" class="btn btn-danger btn-lg">Delete</a>
+      </div>
+    </div>
+    <br />
+    <br />
+  {% endfor %}
+
+  </div>
+  <br />
+{% endblock content %} -->

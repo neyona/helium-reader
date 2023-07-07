@@ -1,0 +1,233 @@
+{
+  "data": [
+    {
+      "lng": 9.826254761521717,
+      "lat": 47.145322689808296,
+      "timestamp_added": "2022-07-12T17:27:02.000000Z",
+      "status": {
+        "timestamp": "2022-07-12T00:26:40.279000Z",
+        "online": "online",
+        "listen_addrs": [
+          "/p2p/11QoSC1e9JKQqtbuog6vB3mRsVU1A5GJYteC5Xwk4iLdf9icJRW/p2p-circuit/p2p/112obXhsswfMNjPvEG1zdrG7kkDQHS2gqxFfdjjaZndxu28t5fpt"
+        ],
+        "height": 1432671
+      },
+      "reward_scale": 0.5555572509765625,
+      "payer": "14eUfY1GsjK4WH6uZYoeagnFtigBKdvPruAXLmc5UsUMEDj3yib",
+      "owner": "13d3X3uVjViDkjYaehZqaEHxGM1FqS6PAH5fpFq2wqhdCPMuMjR",
+      "nonce": 1,
+      "name": "dandy-blush-orangutan",
+      "mode": "full",
+      "location_hex": "881f8e2b17fffff",
+      "location": "8c1f8e2b1611dff",
+      "last_poc_challenge": 1438482,
+      "last_change_block": 1438482,
+      "geocode": {
+        "short_street": "Im Moos",
+        "short_state": "Vorarlberg",
+        "short_country": "AT",
+        "short_city": "Bludenz",
+        "long_street": "Im Moos",
+        "long_state": "Vorarlberg",
+        "long_country": "Austria",
+        "long_city": "Bludenz",
+        "city_id": "Ymx1ZGVuenZvcmFybGJlcmdhdXN0cmlh"
+      },
+      "gain": 30,
+      "elevation": 1,
+      "block_added": 1437151,
+      "block": 1438497,
+      "address": "112obXhsswfMNjPvEG1zdrG7kkDQHS2gqxFfdjjaZndxu28t5fpt"
+    },
+    {
+      "lng": 22.960704298180993,
+      "lat": 40.5825303969616,
+      "timestamp_added": "2022-07-12T17:26:01.000000Z",
+      "status": {
+        "timestamp": null,
+        "online": "online",
+        "listen_addrs": null,
+        "height": null
+      },
+      "reward_scale": null,
+      "payer": "14sKWeeYWQWrBSnLGq79uRQqZyw3Ldi7oBdxbF6a54QboTNBXDL",
+      "owner": "13f9pd5M7qzerAaRxCdNYZUnhTHM4BK1PyCL1mWara3fmidAHK5",
+      "nonce": 1,
+      "name": "silly-quartz-mandrill",
+      "mode": "full",
+      "location_hex": "881edcd04dfffff",
+      "location": "8c1edcd04c55dff",
+      "last_poc_challenge": null,
+      "last_change_block": 1437150,
+      "geocode": {
+        "short_street": "Meg. Alexandrou",
+        "short_state": "Decentralized Administration of Macedonia and Thrace",
+        "short_country": "GR",
+        "short_city": "Kalamaria",
+        "long_street": "Megalou Alexandrou",
+        "long_state": "Decentralized Administration of Macedonia and Thrace",
+        "long_country": "Greece",
+        "long_city": "Kalamaria",
+        "city_id": "a2FsYW1hcmlhZGVjZW50cmFsaXplZCBhZG1pbmlzdHJhdGlvbiBvZiBtYWNlZG9uaWEgYW5kIHRocmFjZWdyZWVjZQ"
+      },
+      "gain": 40,
+      "elevation": 25,
+      "block_added": 1437150,
+      "block": 1438497,
+      "address": "112aG2YtiydWUn68j1F8h5L4L5mJ8NLgCrK1fbsF5ic7RxMmxeMp"
+    }
+  ],
+"cursor": "eyJoZWlnaHQiOjE0Mzg0OTcsImZpbHRlcl9tb2RlcyI6WyJmdWxsIiwibGlnaHQiLCJkYXRhb25seSJdLCJiZWZvcmVfYmxvY2siOjE0MzU3MDEsImJlZm9yZV9hZGRyZXNzIjoiMTFLcWt5VXh2djJQRUxHdzdtUEhXRVBOOHk2cjNRUEpETnFQMzVUZm5Kb3NSRmRnVFQ1In0"
+}
+
+
+
+{
+  "meta": {
+    "min_time": "2022-01-30T00:00:00Z",
+    "max_time": "2022-02-13T00:00:00Z",
+    "bucket": "day"
+  },
+  "data": [
+    {
+      "total": 0.06855782,
+      "timestamp": "2022-02-12T00:00:00.000000Z",
+      "sum": 6855782,
+      "stddev": 0.013206299039,
+      "min": 7.3e-7,
+      "median": 0.00349632,
+      "max": 0.02933087,
+      "avg": 0.009793974285714286
+    },
+    {
+      "total": 0.19482023,
+      "timestamp": "2022-02-11T00:00:00.000000Z",
+      "sum": 19482023,
+      "stddev": 0.015584277675,
+      "min": 6.8e-7,
+      "median": 0.01037289,
+      "max": 0.03984541,
+      "avg": 0.016235019166666666
+    },
+    {
+      "total": 0.11243183,
+      "timestamp": "2022-02-10T00:00:00.000000Z",
+      "sum": 11243183,
+      "stddev": 0.015233191186,
+      "min": 0.00000103,
+      "median": 0.00976428,
+      "max": 0.03472552,
+      "avg": 0.01405397875
+    },
+    {
+      "total": 0.02385397,
+      "timestamp": "2022-02-09T00:00:00.000000Z",
+      "sum": 2385397,
+      "stddev": 0.0087485254385234,
+      "min": 0.00000226,
+      "median": 0.00243988,
+      "max": 0.01897195,
+      "avg": 0.0059634925
+    },
+    {
+      "total": 0.03877337,
+      "timestamp": "2022-02-08T00:00:00.000000Z",
+      "sum": 3877337,
+      "stddev": 0.022384940922,
+      "min": 3.3e-7,
+      "median": 6.8e-7,
+      "max": 0.03877236,
+      "avg": 0.012924456666666667
+    },
+    {
+      "total": 0.10315281,
+      "timestamp": "2022-02-07T00:00:00.000000Z",
+      "sum": 10315281,
+      "stddev": 0.013268125328,
+      "min": 0.00000189,
+      "median": 0.008702255,
+      "max": 0.03721848,
+      "avg": 0.01289410125
+    },
+    {
+      "total": 0.14330149,
+      "timestamp": "2022-02-06T00:00:00.000000Z",
+      "sum": 14330149,
+      "stddev": 0.014341971117,
+      "min": 3.3e-7,
+      "median": 0.00625305,
+      "max": 0.04110674,
+      "avg": 0.013027408181818181
+    },
+    {
+      "total": 0.11434222,
+      "timestamp": "2022-02-05T00:00:00.000000Z",
+      "sum": 11434222,
+      "stddev": 0.012205385138,
+      "min": 0.00000106,
+      "median": 0.00493019,
+      "max": 0.0369704,
+      "avg": 0.010394747272727272
+    },
+    {
+      "total": 0.09215222,
+      "timestamp": "2022-02-04T00:00:00.000000Z",
+      "sum": 9215222,
+      "stddev": 0.013603941845,
+      "min": 3.8e-7,
+      "median": 0.001353925,
+      "max": 0.03109096,
+      "avg": 0.009215222
+    },
+    {
+      "total": 0.03365564,
+      "timestamp": "2022-02-03T00:00:00.000000Z",
+      "sum": 3365564,
+      "stddev": 0.010935248652,
+      "min": 7.9e-7,
+      "median": 0.0012397,
+      "max": 0.02772437,
+      "avg": 0.005609273333333334
+    },
+    {
+      "total": 0.10614825,
+      "timestamp": "2022-02-02T00:00:00.000000Z",
+      "sum": 10614825,
+      "stddev": 0.018441429474,
+      "min": 7.3e-7,
+      "median": 0.00170238,
+      "max": 0.04176006,
+      "avg": 0.01326853125
+    },
+    {
+      "total": 0.20781411,
+      "timestamp": "2022-02-01T00:00:00.000000Z",
+      "sum": 20781411,
+      "stddev": 0.016747749972,
+      "min": 7.2e-7,
+      "median": 0.016371175,
+      "max": 0.04450252,
+      "avg": 0.0173178425
+    },
+    {
+      "total": 0.05697172,
+      "timestamp": "2022-01-31T00:00:00.000000Z",
+      "sum": 5697172,
+      "stddev": 0.0095939688696655,
+      "min": 0.00000144,
+      "median": 0.00214598,
+      "max": 0.02869892,
+      "avg": 0.006330191111111111
+    },
+    {
+      "total": 0.21550509,
+      "timestamp": "2022-01-30T00:00:00.000000Z",
+      "sum": 21550509,
+      "stddev": 0.013598357374,
+      "min": 0.00000109,
+      "median": 0.014087545,
+      "max": 0.04328404,
+      "avg": 0.015393220714285715
+    }
+  ]
+}

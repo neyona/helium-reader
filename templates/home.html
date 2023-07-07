@@ -1,0 +1,41 @@
+<!-- templates/home.html -->
+{% extends '_base.html' %}
+
+{% block title %}HNT Tracker{% endblock title %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  <div class="card" style="background-image: linear-gradient(180deg, MediumSlateBlue, Purple, MediumVioletRed); color: white;">
+    <div class="card-header">
+    <h1>Hi {{ user.first_name }} {{ user.last_name }}!</h1>
+    <h2 style="font-family: 'Optima', sans-serif;"><b>You are now logged in.</b></h2>
+    </div>
+    <div class="card-body">
+        <hr color="white" />
+        <br />
+        <h2>
+        <a class="btn btn-sample btn-lg" href="{% url 'hotspot_list' %}">
+            Go to the available hotspots list?
+        </a>
+        </h2>
+        <h2>You can also <a class="btn btn-sample btn-lg" href="{% url 'home' %}">Log Out</a></h2>
+      </div>
+  </div>
+{% else %}
+  <div class="card" style="background-color: palevioletred; color: white;">
+    <div class="card-header">
+    <h1 style="font-family: 'Tisa', 'Optima', sans-serif;"><b>Welcome to the <u><i>
+        HNT Tracker by Hotspot</i></u>. You are not logged in, or have not signed up.</b></h1>
+    </div>
+    <div class="card-body">
+    <br />
+    <hr color="white" />
+    <br />
+    <h2 style="font-family: 'Tisa', sans-serif;">Please either
+        <a class="btn btn-sample btn-lg" href="{% url 'login' %}">Log In</a> or
+        <a class="btn btn-sample btn-lg" href="{% url 'signup' %}">Sign Up</a>
+    </h2>
+    </div>
+  </div>
+{% endif %}
+{% endblock content %}

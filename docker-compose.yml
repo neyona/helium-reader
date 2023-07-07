@@ -1,0 +1,109 @@
+version: '3.9'
+
+services:
+    web:
+        build:
+            context: .
+            dockerfile: ./docker/local/django/Dockerfile
+        command: /start
+        volumes:
+            # from the host to the docker container
+            - .:/app
+            - static_volume:/app/staticfiles
+            - media_volume:/app/mediafiles
+        ports:
+            - 8000:8000
+        env_file:
+            - .envs/.dev
+        depends_on:
+            # can be called whatever you want
+            - hrdb
+            - redis
+        networks:
+            - hr-network
+
+    hrdb:
+        image: postgres:14
+        ports:
+            - "5432:5432"
+        volumes:
+            - postgres_data:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_DB=********
+            - POSTGRES_USER=********
+            - POSTGRES_PASS=***********
+            - "POSTGRES_HOST_AUTH_METHOD=trust"
+        networks:
+            - hr-network
+
+    # redis allows django and celery to communicate with each other
+    redis:
+        image: redis:latest
+        networks:
+            - hr-network
+
+    selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+            - 4444:4444
+        networks:
+            - hr-network
+
+    # start-celeryworker and start-flower is in the Dockerfile
+    celery_worker:
+        build:
+            context: .
+            dockerfile: ./docker/local/django/Dockerfile
+        command: /start-celeryworker
+        volumes:
+            - .:/app
+        env_file:
+            - .envs/.dev
+        depends_on:
+            - redis
+            - hrdb
+        networks:
+            - hr-network
+
+    celery_beat:
+        build:
+            context: .
+            dockerfile: ./docker/local/django/Dockerfile
+        command: /start-celerybeat
+        volumes:
+            - .:/app
+        env_file:
+            - .envs/.dev
+        depends_on:
+            - redis
+            - hrdb
+        networks:
+            - hr-network
+
+    # flower is an admin tool for Celery
+    flower:
+        build:
+            context: .
+            dockerfile: ./docker/local/django/Dockerfile
+        command: /start-flower
+        volumes:
+            - .:/app
+        env_file:
+            - .envs/.dev
+        ports:
+            - "5557:5555"
+        depends_on:
+            - redis
+            - hrdb
+        networks:
+            - hr-network
+
+
+networks:
+    hr-network:
+        driver: bridge
+
+volumes:
+    postgres_data:
+    static_volume:
+    media_volume:

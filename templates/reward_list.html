@@ -1,0 +1,44 @@
+<!-- {% extends '_base.html' %}
+
+{% block title %}Reward List{% endblock title %}
+
+{% block content %}
+<div class="card" style="background-color: black; color: white;">
+    <span>
+        <h1>Reward List</h1>
+        <a class="btn btn-sample btn-lg" href="{% url 'reward_new' %}">
+            Input a new reward?
+        </a>
+        <a class="btn btn-sample btn-lg" href="{% url 'hotspot_list' %}">
+            Go to the hotspot list?
+        </a>
+    </span>
+    <hr />
+    {% for reward in object_list %}
+        <div class="card">
+            <div class="card-body" style="background-image: linear-gradient(110deg, midnightblue, darkslategray); color: white;">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div>
+                            <span>Reward:&nbsp;</span>
+                            <span>{{ reward.sum }}</span>
+                        </div>
+                        <div>
+                            <span>Date:&nbsp;</span>
+                            <span>{{ reward.timestamp }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer text-center" style="background-color: teal; color: white;">
+                <span>
+                    <a href="{% url 'reward_edit' seldb.pk %}" class="btn btn-edit ml-2 btn-lg">Edit</a>&nbsp; |
+                    <a href="{% url 'reward_delete' seldb.pk %}" class="btn btn-danger ml-2 btn-lg">Delete</a>
+                </span>
+            </div>
+    </div>
+<br />
+{% endfor %}
+</div>
+{% endblock %} -->
